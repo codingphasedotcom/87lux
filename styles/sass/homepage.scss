@@ -1,5 +1,9 @@
+*{
+  box-sizing: border-box;
+}
 html {
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -7,7 +11,9 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-
+.content-area{
+  padding: 62px 0;
+}
 .container-fluid {
   padding: 0;
 }
@@ -18,8 +24,7 @@ body {
 
 // JUMBO BANNER COPYWRITING
 #jumbo {
-  min-height: 75vh;
-  margin-top: $spacer * 3;
+  min-height: calc(100vh - 62px);
 }
 
 .jumbo {
@@ -153,11 +158,9 @@ body {
 
 // ECOMMERCE PLATFORMS
 .platforms {
-  margin-top: $spacer*1.5;
-  margin-bottom: $spacer*14;
+  // background: red;
+  padding: 100px 0;
   &__container {
-    margin-top: $spacer * 1.5;
-    margin-bottom: $spacer * 3;
     width: 65%;
     margin-left: auto;
     margin-right: auto;
@@ -181,7 +184,7 @@ body {
     height: auto;
     &:hover {
       transform: translateY(-1px);
-      transition: transform .2s ease-in-out;
+      // transition: transform .2s ease-in-out;
     }
   }
 }
@@ -309,18 +312,22 @@ body {
 
 // MEET THE TEAM
 #team {
-  margin-top: 200px;
-  margin-bottom: 200px;
-  $padding: 50px;
-  padding-left: $padding;
-  padding-right: $padding;
+  overflow:hidden;
+  // height: 100vh;
+  padding: 200px 0;
+  // background:black;
+  // margin-top: 200px;
+  // margin-bottom: 200px;
+  // $padding: 50px;
+  // padding-left: $padding;
+  // padding-right: $padding;
 }
 
 .team-container {
   @include flex_center();
   // background-color: pink;
   position: relative;
-  height: 800px;
+  height: 100vh;
   width: 100%;
   text-align: center;
 
@@ -685,54 +692,54 @@ body {
     {
       @include circle_border_shadow(#5296fc, rgba(82, 150, 252, $opacity-circle-responsive));
       @include size_even(185px * $shrink);
-      left: 0;
-      top: 60%;
+      // left: 0;
+      // top: 60%;
     }
     
     &--yellow
     {
       @include circle_border_shadow(#EEFC52, rgba(238, 252, 82, $opacity-circle-responsive));
-      bottom: 0;
-      left: 25%;
+      // bottom: 0;
+      // left: 25%;
     }
     
     &--violet
     {
       @include circle_border_shadow(#a82282, rgba(168, 34, 130, $opacity-circle-responsive));
       @include size_even(80px * $shrink);
-      left: 12%;
-      top: 7%;
+      // left: 12%;
+      // top: 7%;
     }
     &--green
     {
       @include circle_border_shadow(#38AF43, rgba(56, 175, 67, $opacity-circle-responsive));
       @include size_even(135px * $shrink);
-      left: 50%;
-      top: 18%;
+      // left: 50%;
+      // top: 18%;
       transform: translateX(-50%);
     }
     &--orange
     {
       @include circle_border_shadow(rgba(255, 145, 44, 0.87), rgba(228, 105, 66, $opacity-circle-responsive));
       @include size_even(80px * $shrink);
-      right: 14%;
-      top: 1%;
+      // right: 14%;
+      // top: 1%;
       
     }
     &--red
     {
       @include circle_border_shadow(#E46942, rgba(228, 105, 66, $opacity-circle-responsive));
       @include size_even(80px * $shrink);
-      bottom: 25%;
-      right: 15%;    
+      // bottom: 25%;
+      // right: 15%;    
     }
     
     &--purple
     {
       @include circle_border_shadow(#7D52FC, rgba(125, 82, 252, $opacity-circle-responsive));
       @include size_even(132px * $shrink);
-      right: 0;
-      top: 23%;
+      // right: 0;
+      // top: 23%;
     }
   }
 

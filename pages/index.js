@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>87Lux Homepage</title>
+        <title>87Lux.Agency</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container-fluid">
+      <div className="container-fluid home-page">
         {/* JUMBO*/}
         <section className="jumbo" id="jumbo">
           <div className="container">
@@ -73,8 +73,8 @@ export default function Home() {
           </div>
         </section>
         {/* MEET THE TEAM*/}
-        <section>
-          <div className="container team-container" id="team">
+        <section id="team">
+          <div className="container team-container" >
             <h1 className="team-container__header">Meet the Team</h1>
             <div className="team team--violet team--left team--top"><img className="team__image" src="assets/img/team-violet.jpeg" alt="Team member violet border" /></div>
             <div className="team team--yellow team--left team--bottom"><img className="team__image" src="assets/img/team-yellow.jpeg" alt="Team member yellow border" /></div>
