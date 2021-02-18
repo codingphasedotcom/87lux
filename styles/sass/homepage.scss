@@ -98,7 +98,7 @@ body {
   .rectangle {
     @include flex_center();
     position: absolute;
-    background-image: linear-gradient(to right, rgba(255, 145, 44, 0.87), rgba(255, 72, 66, 0.25)), url("/assets/img/header-groupwork.jpeg");
+    background-image: linear-gradient(to right, rgba(255, 145, 44, 0.87), rgba(255, 72, 66, 0.25)), url("/assets/img/header-groupwork.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
