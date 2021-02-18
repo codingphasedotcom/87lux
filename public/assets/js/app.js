@@ -193,10 +193,10 @@ $(window).on("load", function() {
     duration:0,
   })
     .setTween(shapesTL)
-    .addIndicators({
-      name: "Shapes scene",
-      colorEnd: 'green'
-    })
+    // .addIndicators({
+    //   name: "Shapes scene",
+    //   colorEnd: 'green'
+    // })
     .addTo(homeController);
   
   new ScrollMagic.Scene({
@@ -207,10 +207,10 @@ $(window).on("load", function() {
     duration: document.getElementById('platforms').offsetHeight ,
   })
     .setTween(platformsTL)
-    .addIndicators({
-      name: "Platforms scene",
-      colorEnd: 'green'
-    })
+    // .addIndicators({
+    //   name: "Platforms scene",
+    //   colorEnd: 'green'
+    // })
     .addTo(homeController);
 
   new ScrollMagic.Scene({
@@ -221,10 +221,10 @@ $(window).on("load", function() {
     duration: document.getElementById('projects').offsetHeight,
   })
     .setTween(projectsTL)
-    .addIndicators({
-      name: "Projects scene",
-      colorEnd: 'green'
-    })
+    // .addIndicators({
+    //   name: "Projects scene",
+    //   colorEnd: 'green'
+    // })
     .addTo(homeController);
 
   new ScrollMagic.Scene({
@@ -235,10 +235,10 @@ $(window).on("load", function() {
     duration: document.getElementById('team').offsetHeight ,
   })
   .setTween(teamLeftTL)
-  .addIndicators({
-    name: "Team scene",
-    colorEnd: 'green'
-  })
+  // .addIndicators({
+  //   name: "Team scene",
+  //   colorEnd: 'green'
+  // })
   .addTo(homeController);
 
     new ScrollMagic.Scene({
@@ -249,10 +249,10 @@ $(window).on("load", function() {
       duration: document.getElementById('custom').offsetHeight,
     })
       .setTween(customTL)
-      .addIndicators({
-        name: "Custom scene",
-        colorEnd: 'green'
-      })
+      // .addIndicators({
+      //   name: "Custom scene",
+      //   colorEnd: 'green'
+      // })
       .addTo(homeController);
 
   // new ScrollMagic.Scene({

@@ -12,7 +12,30 @@ class MyDocument extends Document {
         <Head>
           
              
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37043736-17"></script>
 
+
+<script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-37043736-17');
+              `
+            }}
+          />
+          <noscript
+            dangerouslySetInnerHTML={{
+              __html: `
+              <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=174747862937299&ev=PageView&noscript=1"
+/>
+              `
+            }}
+          /> 
 
 {/* 
 <script
