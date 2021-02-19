@@ -1,4 +1,5 @@
 $(window).on("load", function() {
+
   // https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
   // NAVBAR PADDING
   // $("html").css("padding-top", $("#header").outerHeight(true))
@@ -37,7 +38,15 @@ $(window).on("load", function() {
   // ACTIVATE ITEM WHEN LOADING WINDOW
   activateCustomItem($(".custom__item--active"));
 
-  // GSAP ANIMATION
+  
+  
+  setTimeout(() => {
+    $("#loader-container").addClass('close-loader');
+    runHomeAnimation()
+  }, 1000)
+
+  let runHomeAnimation = () => {
+    // GSAP ANIMATION
   let screenWidth = $(window).width();
   let screenHeight = $(window).height();
   let homeController = new ScrollMagic.Controller();
@@ -216,9 +225,9 @@ $(window).on("load", function() {
   new ScrollMagic.Scene({
     triggerElement: "#projects",
     triggerHook: 1,
-    reverse: false,
-    offset: 100,
-    duration: document.getElementById('projects').offsetHeight,
+    reverse: true,
+    offset: 300,
+    duration: 500,
   })
     .setTween(projectsTL)
     // .addIndicators({
@@ -269,4 +278,6 @@ $(window).on("load", function() {
   //   })
   //   .addTo(homeController);
 
+  }
+  
 });

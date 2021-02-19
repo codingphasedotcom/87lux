@@ -28,6 +28,16 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <div id="loader-container">
+        <div class="preloader loading">
+          <span class="slice"></span>
+          <span class="slice"></span>
+          <span class="slice"></span>
+          <span class="slice"></span>
+          <span class="slice"></span>
+          <span class="slice"></span>
+        </div>
+      </div>
       {/* HEADER */}
       <Header />
       {/* CONTENT */}
@@ -36,6 +46,9 @@ export default function Layout(props) {
       </div>
       {/* FOOTER*/}
       <Footer />
+
+      {/* loader */}
+      
     </>
   );
 }

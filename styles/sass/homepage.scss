@@ -92,6 +92,7 @@ body {
   max-width: 500px;
 
   .shape {
+    transform: translate(100vw, 0px);
     box-shadow: 0px 12px 42px 1px rgba(0,0,0,0.25);
   }
 
@@ -628,10 +629,12 @@ body {
   }
 
   #shapes {
+    
     margin-top: $spacer*5;
     transform: scale(.9) translateX(-5%);
+    
   }
-
+  
   .shapes {
     transform: scale(.9) translateX(15%);
   }
